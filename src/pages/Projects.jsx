@@ -14,7 +14,7 @@ const Projects = () => {
         <div className="sm:hidden">
           <TopNavbar/>
         </div>
-        <div className=" mt-20 sm:mt-14" >
+        <div className=" mt-20 sm:mt-14  mb-20" >
           {
             projectsDetail.map((el)=>(<ProjectCard key={el.id} id={el.id} project={el.project} title={el.title} desc={el.desc} image={el.imageDay} likeCount={el.likeCount} github={el.github} liveDemo={el.liveDemo} icons={el.icons} />))
           }

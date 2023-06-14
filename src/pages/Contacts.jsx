@@ -10,7 +10,6 @@ const Contacts = () => {
 
     const sendEmail = (e)=>{
       e.preventDefault()
-      console.log(form.current)
 
       emailjs.sendForm('service_15wdkoz', 'template_qdjbq8f', form.current, '-NTpPszCYuLXxg974')
       .then((result) => {
@@ -18,15 +17,14 @@ const Contacts = () => {
       }, (error) => {
           console.log(error.text);
       });
-      
-
+      alert("Message sent successfully!")
     }
   return (
     <div className='w-full min-h-screen' >
         <div className="sm:hidden">
           <TopNavbar/>
         </div>
-        <div className=' w-11/12 sm:w-2/3  m-auto mt-20 border border-gray-900 text-white rounded-lg p-6'>
+        <div className=' w-11/12 sm:w-2/3  m-auto mt-20 border border-gray-900 text-white rounded-lg p-6  mb-20'>
             <div className='text-2xl text-center' >Contact Me</div>
             <form className="flex flex-col space-y-4" ref={form} onSubmit={sendEmail}>
                 <label for="name" className="text-white">Name:</label>

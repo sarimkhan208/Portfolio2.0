@@ -7,11 +7,11 @@ import {GrReactjs} from 'react-icons/gr'
 
 const ProfileSkills = () => {
   return (
-        <div className='grid grid-cols-3 gap-1' >
+        <div className='grid grid-cols-3 gap-1  mb-20' >
           {
             icons.map((el)=>(
               <a href={el.link} target='_blank' >
-                <div key={el.name} style={{backgroundColor:el.backgroundColor}}>
+                <div  key={el.name} style={{backgroundColor:el.backgroundColor}}>
                   <div style={{fontSize:'100px',color:el.color}} className='flex justify-center items-center py-4  ' >{el.icons}</div>
                   <div style={{fontSize:'20px',color:el.color}} className='text-center font-bold'>{el.name}</div>
                 </div>

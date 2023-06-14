@@ -24,7 +24,7 @@ const Profile = () => {
                 </div>
                 <div className='flex w-9/12 items-center  justify-around' >
                     <div>
-                        <div className='text-center' >{projectsDetail.length}</div>
+                        <div className='text-center' >{projectsDetail.length}+</div>
                         <div>Projects</div>
                     </div>
                     <div>

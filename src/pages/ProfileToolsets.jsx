@@ -9,7 +9,7 @@ import {FiCodepen} from 'react-icons/fi'
 
 const ProfileToolsets = () => {
   return (
-        <div className='grid grid-cols-3 gap-1 w-full' >
+        <div className='grid grid-cols-3 gap-1 w-full mb-20' >
           {
             toolsets.map((el)=>(
               <a href={el.link} target='_blank' >
