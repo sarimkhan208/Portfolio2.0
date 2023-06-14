@@ -4,7 +4,7 @@ import { Link as RouterLink } from 'react-router-dom'
 
 const TopNavbar = () => {
   return (
-    <div className='flex fixed top-0 left-0 w-full bg-black justify-between px-1'>
+    <div className='flex fixed top-0 left-0 w-full bg-black justify-between px-1 pr-3'>
       <div className='py-1' >
         <img src={img} style={{width:'180px',height:'50px'}} alt='logo' />
       </div>
@@ -17,7 +17,7 @@ const TopNavbar = () => {
         </RouterLink>
 
         <RouterLink to='/contacts' >
-        <button className='flex hover:bg-gray-900 w-full rounded-md p-2 mr-2'>
+        <button className='flex hover:bg-gray-900 w-full rounded-md p-2'>
             <RiContactsFill className='text-2xl text-white mt-1' />
         </button>
         </RouterLink>

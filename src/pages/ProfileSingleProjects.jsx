@@ -8,7 +8,7 @@ const ProfileSingleProjects = () => {
     <div>
         <div className="sm:mt-14" >
           {
-            projectsDetail.map((el)=>(<ProjectCard key={el.id} id={el.id} project={el.project} title={el.title} desc={el.desc} image={el.imageDay} likeCount={el.likeCount} github={el.github} liveDemo={el.liveDemo} icons={el.icons} />))
+            projectsDetail.map((el)=>(<ProjectCard key={el.id} id={el.id} project={el.project} title={el.title} desc={el.desc} image={el.imageDay} likeCount={el.likeCount} github={el.github} liveDemo={el.liveDemo} icons={el.icons} time={el.time} />))
           }
         </div>
         <div className="sm:hidden">

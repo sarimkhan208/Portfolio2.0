@@ -51,7 +51,7 @@ const ProjectCard = ({id, title,github,likeCount,icons,image,desc,project,liveDe
               <div>
                 <div  className='my-2'>
                   <div className='font-bold text-white' >Tech Stack Used</div>
-                  <div className='flex my-2' >
+                  <div className='flex my-2 mx-2' >
                     {
                       icons.map((el)=>(
                         <div>
