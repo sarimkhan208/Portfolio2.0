@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 
 
-const ProjectCard = ({id, title,github,likeCount,icons,image,desc,project,liveDemo}) => {
+const ProjectCard = ({id, title,github,likeCount,icons,image,desc,project,liveDemo,time}) => {
   return (
         <div key={id} className='bg-black  w-11/12 mx-1 sm:mx-auto border-b border-gray-900 sm:mb-10'  >
               {/* Header  */}
@@ -62,11 +62,8 @@ const ProjectCard = ({id, title,github,likeCount,icons,image,desc,project,liveDe
                   </div>
                 </div>      
               </div>
-              <div className='text-base text-gray-600 mt-2 cursor-pointer'>
-                View all 5 comments
-              </div>
               <div className='text-xs text-gray-600'>
-                1 day ago
+                {time} ago
               </div>
 
             </div>

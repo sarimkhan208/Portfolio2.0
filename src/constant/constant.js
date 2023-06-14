@@ -11,7 +11,8 @@ export let projectsDetail = [
       github : 'https://github.com/sarimkhan208/kindhearted-afternoon-7542',
       liveDemo:'https://wearex.vercel.app/',
       likeCount : 39,
-      icons : ['ReactJS','HTML','CSS','JavaScript','Chakra UI']
+      icons : ['ReactJS','HTML','CSS','JavaScript','Chakra UI'],
+      time : '2 months'
   
     },
     {
@@ -24,7 +25,8 @@ export let projectsDetail = [
       github : 'https://github.com/sarimkhan208/Carat-lane',
       liveDemo:'https://caratlane.vercel.app/',
       likeCount : 24,
-      icons : ['React','ChakraUI','MongoDB','ExpressJS','NodeJS']
+      icons : ['React','ChakraUI','MongoDB','ExpressJS','NodeJS'],
+      time : '2 months'
     },
     {
       id:5,
@@ -36,7 +38,8 @@ export let projectsDetail = [
       github : 'https://github.com/sarimkhan208/online-voting-system',
       liveDemo:'https://online-voting-system-ruddy.vercel.app/',
       likeCount : 54,
-      icons : ['React','ChakraUI','MongoDB','ExpressJS','NodeJS']
+      icons : ['React','ChakraUI','MongoDB','ExpressJS','NodeJS'],
+      time : '1 month'
   
     },
     {
@@ -49,7 +52,8 @@ export let projectsDetail = [
       github : 'https://github.com/sarimkhan208/Chalo-ghume',
       liveDemo:'https://interesting-stretch-8935.vercel.app/',
       likeCount : 45,
-      icons : ['ReactJS','HTML','JavaScript','JSON Server','Firebase']
+      icons : ['ReactJS','HTML','JavaScript','JSON Server','Firebase'],
+      time : '3 months'
     },
     {
       id:3,
@@ -61,7 +65,8 @@ export let projectsDetail = [
       github : 'https://github.com/sarimkhan208/Full-Stack-Marvel_project',
       liveDemo:'https://frontend-beige-mu.vercel.app/',
       likeCount : 35,
-      icons : ['React','ChakraUI','MongoDB','ExpressJS','NodeJS']
+      icons : ['React','ChakraUI','MongoDB','ExpressJS','NodeJS'],
+      time : '2 months'
   
     },
     {
@@ -74,7 +79,8 @@ export let projectsDetail = [
       github : 'https://github.com/sarimkhan208/Craft-bazaar',
       liveDemo:'https://genuine-bavarois-d93c8f.netlify.app/',
       likeCount : 47,
-      icons : ['HTML','CSS','JavaScript','JSON Server']
+      icons : ['HTML','CSS','JavaScript','JSON Server'],
+      time : '4 months'
     },
     {
       id:1,
@@ -86,7 +92,8 @@ export let projectsDetail = [
       github : 'https://github.com/sarimkhan208/obtainable-tongue-3381',
       liveDemo:'https://thunderous-mousse-e34bf3.netlify.app/',
       likeCount : 14,
-      icons : ['HTML','CSS','JavaScript']
+      icons : ['HTML','CSS','JavaScript'],
+      time : '5 months'
   
     }
 ]
