@@ -1,10 +1,26 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import TopNavbar from '../components/TopNavbar'
 import BottomNavbar from '../components/BottomNavbar'
 import {AiFillGithub,AiFillLinkedin} from 'react-icons/ai'
 import {FaTwitter} from 'react-icons/fa'
+import emailjs from '@emailjs/browser';
 
 const Contacts = () => {
+  const form = useRef();
+
+    const sendEmail = (e)=>{
+      e.preventDefault()
+      console.log(form.current)
+
+      emailjs.sendForm('service_15wdkoz', 'template_qdjbq8f', form.current, '-NTpPszCYuLXxg974')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      
+
+    }
   return (
     <div className='w-full min-h-screen' >
         <div className="sm:hidden">
@@ -12,15 +28,15 @@ const Contacts = () => {
         </div>
         <div className=' w-11/12 sm:w-2/3  m-auto mt-20 border border-gray-900 text-white rounded-lg p-6'>
             <div className='text-2xl text-center' >Contact Me</div>
-            <form className="flex flex-col space-y-4">
+            <form className="flex flex-col space-y-4" ref={form} onSubmit={sendEmail}>
                 <label for="name" className="text-white">Name:</label>
-                <input type="text" id="name" className="bg-gray-800 text-white rounded-lg py-2 px-4"/>
+                <input type="text" id="name" name="user_name" className="bg-gray-800 text-white rounded-lg py-2 px-4"/>
 
                 <label for="email" className="text-white">Email:</label>
-                <input type="email" id="email" className="bg-gray-800 text-white rounded-lg py-2 px-4"/>
+                <input type="email" id="email" name="user_email" className="bg-gray-800 text-white rounded-lg py-2 px-4"/>
 
                 <label for="password" className="text-white">Message</label>
-                <input type="text-area" id="password" className="bg-gray-800 text-white rounded-lg py-2 px-4"/>
+                <textarea type="text-area" name="message" id="password" className="bg-gray-800 text-white rounded-lg py-2 px-4"/>
                 
                 <button type="submit" className="bg-blue-500 hover:bg-blue-600 text-white rounded-lg py-2 px-4">Send</button>
             </form>
