@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const ProjectCard = ({id, title,github,likeCount,icons,image,desc,project,liveDemo,time}) => {
   return (
-        <div key={id} className='bg-black  w-11/12 mx-1 sm:mx-auto border-b border-gray-900 sm:mb-10'  >
+        <div key={id} className='bg-black  w-11/12 mx-auto   border-b border-gray-900 sm:mb-10'  >
               {/* Header  */}
             <div className='flex mb-1 mx-2 ' >
               <div>
@@ -30,7 +30,7 @@ const ProjectCard = ({id, title,github,likeCount,icons,image,desc,project,liveDe
             </div>
 
               {/* Footer */}
-            <div className='my-5 mx-2' >
+            <div className='my-5' >
 
               {/* Like Comment Share Logo */}
               <div className='flex justify-between' >
@@ -49,9 +49,9 @@ const ProjectCard = ({id, title,github,likeCount,icons,image,desc,project,liveDe
                   <div className='text-white text-base'>{desc}</div>
               </div>
               <div>
-                <div  className='my-2'>
+                <div  className='my-2 pr-6'>
                   <div className='font-bold text-white' >Tech Stack Used</div>
-                  <div className='flex my-2 mx-2' >
+                  <div className='flex  my-2' >
                     {
                       icons.map((el)=>(
                         <div>
