@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 
 const ProjectCard = ({id, title,github,likeCount,icons,image,desc,project,liveDemo,time}) => {
   return (
-        <div key={id} className='bg-black  w-11/12 mx-auto   border-b border-gray-900 sm:mb-10'  >
+        <div key={id} className='bg-black  w-11/12 px-auto   border-b border-gray-900 sm:mb-10'  >
               {/* Header  */}
             <div className='flex mb-1 mx-2 ' >
               <div>
